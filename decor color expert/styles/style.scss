@@ -16,7 +16,7 @@ li {
   list-style-type: none;
 }
 ul {
-  padding-left: 0; /* Сдвигаем список влево */
+  padding-left: 0;
   margin: 0px;
 }
 a {
@@ -55,29 +55,23 @@ body {
   box-sizing: content-box;
 }
 
-._ibg {
-  position: relative;
-}
-._ibg img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  object-fit: cover;
-}
-
 ._button {
-  font-weight: 300;
+  padding: 20px 60px;
   font-size: 20px;
   line-height: 150%;
   color: #ffffff;
-  padding: 20px 65px;
   border-radius: 10px;
-  box-sizing: border-box;
-  background: linear-gradient(90deg, #4c6071 0%, #55bdea 100%);
+  background: #193f50;
+  transform: scale(1);
+  transition: all 0.2s ease-in;
+  //55bdea
+  //6488d4
+  //193f50
+  &:hover {
+    color: #55bdea;
+  }
   &:active {
-    background: linear-gradient(90deg, #6488d4 0%, #193f50 100%);
+    transform: scale(0.98);
   }
 }
 
@@ -98,6 +92,7 @@ body {
   position: absolute;
   z-index: 5;
   width: 100%;
+  margin-bottom: 40px;
   &__container {
     display: flex;
     align-items: center;
@@ -150,23 +145,16 @@ body {
 /*-------------------------------------------------------------*/
 /*-----Home----------------------------------------------------*/
 /*-------------------------------------------------------------*/
-.page__home {
-}
 
 .home {
-  margin-bottom: 190px;
-  &__image {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
+  background: url(../assets/img/main-background.jpg) no-repeat;
+  background-size: cover;
+  padding: 80px 0px;
+  &__container {
   }
   &__body {
     color: #ffffff;
-    position: relative;
-    z-index: 1;
-    padding: 170px 0px 30px 0px;
+    padding: 150px 0px 30px 0px;
   }
   &__title {
     font-family: "Bebas Neue";
@@ -177,22 +165,17 @@ body {
   }
   &__discount {
     max-width: 500px;
-    padding: 30px;
+    padding: 25px;
     background-color: #ffffff;
     border-radius: 20px;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     display: flex;
-    gap: 10px 20px;
   }
   &__text {
     font-weight: 500;
     color: #000000;
     font-size: 20px;
     line-height: 150%;
-  }
-  &__button {
-    max-width: 255px;
-    min-height: 70px;
   }
 }
 
@@ -203,13 +186,18 @@ body {
     font-size: 20px;
     line-height: 150%;
   }
+  &__image {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+  }
 }
 /*-------------------------------------------------------------*/
 /*-----About us------------------------------------------------*/
 /*-------------------------------------------------------------*/
 
 .page__about-us {
-  margin-bottom: 70px;
+  padding: 70px 0px 70px 0px;
 }
 
 .about-us__body {
@@ -332,8 +320,10 @@ body {
 
 .portfolio__button {
   display: block;
-  max-width: 290px;
+  text-align: center;
   margin: 0 auto;
+  max-width: 300px;
+  padding: 20px 30px;
 }
 
 /*-------------------------------------------------------------*/
@@ -406,7 +396,7 @@ body {
 }
 .calculatingcost__button {
   border: 2px solid black;
-  padding: 20px 120px;
+  padding: 20px 100px;
 }
 
 /*-------------------------------------------------------------*/
