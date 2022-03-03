@@ -97,7 +97,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 65px;
+    gap: 0px 40px;
+  }
+  &__logo {
+    width: 200px;
   }
 }
 
@@ -119,12 +122,10 @@ body {
   }
 }
 
-.contact {
-  &__list {
-    display: flex;
-    gap: 10px 10px;
-    flex-direction: column;
-  }
+.contacts {
+  display: flex;
+  gap: 10px 10px;
+  flex-direction: column;
   &__item a {
     font-size: 16px;
     &:hover {
@@ -288,7 +289,7 @@ body {
   margin-bottom: 70px;
 }
 
-.portfolio{
+.portfolio {
   &__list {
     display: flex;
     margin-bottom: 60px;
@@ -302,7 +303,7 @@ body {
     line-height: 150%;
     color: #373737;
     min-width: 300px;
-    @media (max-width:799px){
+    @media (max-width: 799px) {
       flex: 1 1 100%;
     }
   }
@@ -318,7 +319,6 @@ body {
   margin-bottom: 10px;
   font-weight: 600;
   font-size: 20px;
-
 }
 .item-portfolio__text {
   font-size: 18px;

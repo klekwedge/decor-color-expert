@@ -205,7 +205,11 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-height: 65px;
+  gap: 0px 40px;
+}
+
+.header__logo {
+  width: 200px;
 }
 
 .menu {
@@ -232,7 +236,7 @@ body {
   color: #ffffff;
 }
 
-.contact__list {
+.contacts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -243,11 +247,11 @@ body {
           flex-direction: column;
 }
 
-.contact__item a {
+.contacts__item a {
   font-size: 16px;
 }
 
-.contact__item a:hover {
+.contacts__item a:hover {
   color: white;
   text-decoration: underline;
 }
