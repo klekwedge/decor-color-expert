@@ -521,7 +521,7 @@ body {
 }
 
 .request__form {
-  flex: 1 1 45%;
+  flex: 1 1 40%;
   @media (max-width: 767px) {
     flex: 1 1 100%;
   }
@@ -536,7 +536,7 @@ body {
   margin-bottom: 40px;
 }
 .request__wrapper {
-  flex: 1 1 45%;
+  flex: 1 1 50%;
   @media (max-width: 767px) {
     flex: 1 1 100%;
   }
