@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;700;900&display=swap");
 @import "_nullstyle";
 
 /*-------------------------------------------------------------*/
@@ -33,7 +33,7 @@ input {
   outline: none;
 }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #373737;
   font-size: 16px;
 }
@@ -81,7 +81,7 @@ body._lock {
 }
 
 ._title {
-  font-family: 'Gothic A1', sans-serif;
+  font-family: "Gothic A1", sans-serif;
   text-align: center;
   font-weight: 600;
   margin-bottom: 60px;
@@ -99,17 +99,16 @@ body._lock {
   z-index: 5;
   width: 100%;
   margin-bottom: 40px;
-  &__menu{
+  &__menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 0px;
   }
-
 }
 
 .menu {
-  &__body{
+  &__body {
     display: flex;
     align-items: center;
     gap: 0px 40px;
@@ -151,7 +150,7 @@ body._lock {
 }
 
 @media (max-width: 1050px) {
-  .menu__logo{
+  .menu__logo {
     z-index: 5;
     position: relative;
   }
@@ -226,8 +225,8 @@ body._lock {
     left: 0;
   }
 
-  .menu__body._active::before{
-    content: '';
+  .menu__body._active::before {
+    content: "";
     position: fixed;
     width: 100%;
     top: 0;
@@ -247,7 +246,7 @@ body._lock {
     font-size: 35px;
   }
 
-  .menu__contacts{
+  .menu__contacts {
     font-size: 35px;
   }
   .menu__item {
@@ -275,18 +274,21 @@ body._lock {
 .home {
   background: url(../assets/img/main-background.jpg) no-repeat;
   background-size: cover;
-  padding: 80px 0px;
+  padding: 70px 0px 80px 0px;
 
   &__body {
     color: #ffffff;
     padding: 150px 0px 30px 0px;
   }
   &__title {
-    font-family: 'Gothic A1', sans-serif;
+    font-family: "Gothic A1", sans-serif;
     font-weight: 700;
     font-size: 56px;
     line-height: 130%;
     margin: 0px 0px 30px 0px;
+    @media (max-width: 368px) {
+      font-size: 48px;
+    }
   }
   &__discount {
     max-width: 500px;
@@ -347,6 +349,10 @@ body._lock {
 }
 .about-us__wrapper {
   flex: 0 1 55%;
+  padding: 0px 5px;
+  @media (max-width: 76px) {
+    flex: 1 1 100%;
+  }
 }
 
 .about-us__image {
@@ -708,8 +714,15 @@ body._lock {
     display: flex;
     justify-content: flex-end;
     gap: 0px 20px;
+    @media (max-width: 617px) {
+      justify-content: center;
+    }
   }
   &__item {
+    transition: 0.3s;
+    &:hover {
+      transform: scale(1.3);
+    }
   }
 }
 
