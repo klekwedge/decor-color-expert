@@ -449,7 +449,7 @@ body._lock {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 20px 20px;
+  gap: 20px 30px;
 }
 
 .about-us__text {
@@ -486,7 +486,7 @@ body._lock {
   padding: 0px 5px;
 }
 
-@media (max-width: 76px) {
+@media (max-width: 769px) {
   .about-us__wrapper {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 100%;
@@ -624,16 +624,16 @@ body._lock {
 }
 
 /*-------------------------------------------------------------*/
-/*-----Calculatingcost-----------------------------------------*/
+/*-----calculation---------------------------------------------*/
 /*-------------------------------------------------------------*/
-.page__calculatingcost {
+.page__calculation {
   background-color: #4c6071;
   padding: 60px 0px;
   margin-bottom: 70px;
 }
 
-.calculatingcost__title {
-  font-size: 24px;
+.calculation__title {
+  font-size: 28px;
   line-height: 130%;
   color: #000000;
   background-color: white;
@@ -642,40 +642,52 @@ body._lock {
   margin-bottom: 10px;
 }
 
-.calculatingcost__body {
+.calculation__body {
   background-color: white;
   padding: 30px;
   border-radius: 20px;
   margin-bottom: 10px;
 }
 
-.calculatingcost__block-question {
+.calculation__block-question {
   font-size: 24px;
   line-height: 130%;
   color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px 50px;
+  margin-bottom: 20px;
+}
+
+.calculation__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-.calculatingcost__content {
-  background-color: #4c6071;
+  gap: 30px 40px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 25px;
   border-radius: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 30px 30px;
+  background-color: #4c6071;
 }
 
-.calculatingcost__item {
+.calculation__wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 32%;
+          flex: 1 1 32%;
+}
+
+.calculation__item {
+  width: 100%;
   background-color: white;
   border-radius: 20px;
   font-size: 20px;
@@ -684,17 +696,73 @@ body._lock {
   padding: 20px;
 }
 
-.calculatingcost__item:not(:last-child) {
+.calculation__item:not(:last-child) {
   margin-bottom: 10px;
 }
 
-.calculatingcost__image {
-  margin-bottom: 10px;
+.calculation__choice {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.calculatingcost__button {
+@media (max-width: 992px) {
+  .calculation__choice {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+}
+
+.calculation__image {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.calculation__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px 20px;
+}
+
+@media (max-width: 426px) {
+  .calculation__buttons {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.calculation__button {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40%;
+          flex: 1 1 40%;
   border: 2px solid black;
   padding: 20px 100px;
+}
+
+@media (max-width: 676px) {
+  .calculation__button {
+    padding: 15px 20px;
+  }
+}
+
+@media (max-width: 426px) {
+  .calculation__button {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
 }
 
 /*-------------------------------------------------------------*/
