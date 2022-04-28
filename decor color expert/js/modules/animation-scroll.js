@@ -25,7 +25,7 @@ function animationScroll() {
       ) {
         animItem.classList.add("_active");
       } else {
-          // animItem.classList.remove("_active");
+          animItem.classList.remove("_active");
       }
     }
   }
