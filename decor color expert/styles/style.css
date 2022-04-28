@@ -907,7 +907,7 @@ body._lock {
   color: #ffffff;
 }
 
-.benefits__body {
+.benefits__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -920,18 +920,16 @@ body._lock {
       flex-wrap: wrap;
 }
 
-.benefits__column {
+.benefits__item {
+  min-width: 240px;
+  max-width: 255px;
   background-color: white;
   border-radius: 20px;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 25%;
           flex: 0 1 25%;
-  max-width: 255px;
-}
-
-.benefits__item {
   padding: 50px 25px;
-  min-width: 240px;
+  min-height: 100%;
 }
 
 .item-benefit__icon {
@@ -1162,7 +1160,7 @@ body._lock {
   margin-bottom: 70px;
 }
 
-.catalog__body {
+.catalog__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1178,7 +1176,7 @@ body._lock {
   margin-bottom: 70px;
 }
 
-.catalog__column {
+.catalog__item {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 25%;
           flex: 0 1 25%;
@@ -1215,7 +1213,7 @@ body._lock {
   color: white;
 }
 
-.video-reviews__body {
+.video-reviews__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1227,11 +1225,8 @@ body._lock {
           justify-content: center;
 }
 
-.video-reviews__column {
-  max-width: 260px;
-}
-
 .video-reviews__item {
+  max-width: 260px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

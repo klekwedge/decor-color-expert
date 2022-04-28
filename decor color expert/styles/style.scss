@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;700;900&display=swap");
 @import "_nullstyle";
-@import './modules/_animation';
+@import "./modules/_animation";
 /*-------------------------------------------------------------*/
 /*-----The Foundation------------------------------------------*/
 /*-------------------------------------------------------------*/
@@ -371,25 +371,27 @@ body._lock {
   .benefits__container {
     padding: 60px 0px;
   }
+
   &__title {
     color: #ffffff;
   }
-  &__body {
+
+  &__list {
     display: flex;
     padding: 0px 10px;
     gap: 50px 30px;
     justify-content: center;
     flex-wrap: wrap;
   }
-  &__column {
+
+  &__item {
+    min-width: 240px;
+    max-width: 255px;
     background-color: white;
     border-radius: 20px;
     flex: 0 1 25%;
-    max-width: 255px;
-  }
-  &__item {
     padding: 50px 25px;
-    min-width: 240px;
+    min-height: 100%;
   }
 }
 
@@ -539,7 +541,6 @@ body._lock {
   }
 }
 
-
 .calculation__choice {
   flex: 1 1 50%;
   display: flex;
@@ -583,7 +584,7 @@ body._lock {
 }
 
 .catalog {
-  &__body {
+  &__list {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -591,7 +592,7 @@ body._lock {
     gap: 40px 30px;
     margin-bottom: 70px;
   }
-  &__column {
+  &__item {
     flex: 0 1 25%;
     max-width: 255px;
   }
@@ -633,16 +634,15 @@ body._lock {
 .video-reviews__title {
   color: white;
 }
-.video-reviews__body {
+.video-reviews__list{
   display: flex;
   flex-wrap: wrap;
   gap: 40px 30px;
   justify-content: center;
 }
-.video-reviews__column {
-  max-width: 260px;
-}
+
 .video-reviews__item {
+  max-width: 260px;
   display: flex;
   justify-content: center;
   flex-direction: column;
