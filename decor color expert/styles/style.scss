@@ -634,7 +634,7 @@ body._lock {
 .video-reviews__title {
   color: white;
 }
-.video-reviews__list{
+.video-reviews__list {
   display: flex;
   flex-wrap: wrap;
   gap: 40px 30px;
@@ -649,21 +649,21 @@ body._lock {
 }
 .item-video-review {
 }
-.item-video-review__video {
+.video-review__video {
   margin-bottom: 20px;
 }
-.item-video-review__video video {
+.video-review__video video {
   width: 270px;
   border-radius: 10px;
 }
-.item-video-review__title {
+.video-review__title {
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
   color: #ffffff;
   margin-bottom: 10px;
 }
-.item-video-review__text {
+.video-review__text {
   font-size: 16px;
   line-height: 150%;
   color: #ffffff;
@@ -720,7 +720,7 @@ body._lock {
   flex-wrap: wrap;
   justify-content: center;
   padding: 40px 0px 20px 0px;
-  gap: 30px 130px;
+  gap: 50px 130px;
 }
 
 .contact {
