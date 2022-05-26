@@ -1,14 +1,14 @@
-"use strict";
-
 function animationScroll() {
-  const animItems = document.querySelectorAll("._anim-item");
-  if (animItems.length > 0) {
-    animOnScroll();
-    window.addEventListener("scroll", animOnScroll);
+  const animItems = document.querySelectorAll('._anim-item');
+  function offset(el) {
+    const rect = el.getBoundingClientRect();
+    const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    return { top: rect.top + scrollTop, left: rect.left + scrollLeft };
   }
 
   function animOnScroll() {
-    for (let i = 0; i < animItems.length; i++) {
+    for (let i = 0; i < animItems.length; i += 1) {
       const animItem = animItems[i];
       const animItemHeight = animItem.offsetHeight;
       const animItemOffset = offset(animItem).top;
@@ -20,21 +20,17 @@ function animationScroll() {
       }
 
       if (
-        pageYOffset > animItemOffset - animItemPoint &&
-        pageYOffset < animItemOffset + animItemHeight
+        window.scrollY > animItemOffset - animItemPoint
+        && window.scrollY < animItemOffset + animItemHeight
       ) {
-        animItem.classList.add("_active");
-      } else {
-          animItem.classList.remove("_active");
+        animItem.classList.add('_active');
       }
     }
   }
 
-  function offset(el) {
-    const rect = el.getBoundingClientRect(),
-      scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
-      scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    return { top: rect.top + scrollTop, left: rect.left + scrollLeft };
+  if (animItems.length > 0) {
+    animOnScroll();
+    window.addEventListener('scroll', animOnScroll);
   }
 }
 
