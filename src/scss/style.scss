@@ -90,6 +90,18 @@ body._lock {
   color: #373737;
 }
 
+._ibg {
+  position: relative;
+}
+
+._ibg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+}
 /*-------------------------------------------------------------*/
 /*-----Header--------------------------------------------------*/
 /*-------------------------------------------------------------*/
@@ -272,13 +284,15 @@ body._lock {
 /*-------------------------------------------------------------*/
 
 .home {
-  background: url(../assets/img/main-background.jpg) no-repeat;
-  background-size: cover;
+  // background: url(../assets/img/main-background.jpg) no-repeat;
+  // background-size: cover;
   padding: 70px 0px 80px 0px;
 
   &__body {
     color: #ffffff;
     padding: 150px 0px 30px 0px;
+    position: relative;
+    z-index: 1;
   }
   &__title {
     font-family: "Gothic A1", sans-serif;
@@ -297,6 +311,20 @@ body._lock {
     border-radius: 20px;
     margin-bottom: 60px;
     display: flex;
+  }
+}
+
+.page__home {
+  position: relative;
+}
+
+.home {
+  &__image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
   }
 }
 
